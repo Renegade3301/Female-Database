@@ -80,7 +80,7 @@ float get_float(const char *prompt) {
 }
 
 int addToDatabase(char *name, float rating) {
-    FILE *file = fopen("/Users/hdea3/Documents/Coding/untitled/database.csv", "a");
+    FILE *file = fopen("database.csv", "a");
 
     if (file == NULL) {
         perror("Error opening file");
